@@ -4,7 +4,7 @@ mbr.bin:
 .PHONY: run
 run:
 	dd if=./.target/mbr.bin of=./.target/boot.img
-	read
+	read a
 	bochs -f ./bochrc
 
 .PHONY: dis
